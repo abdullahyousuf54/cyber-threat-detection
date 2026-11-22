@@ -42,7 +42,7 @@ A **single-file** version of the entire project (CLI + dashboard) is provided se
 | `step7_analysis.py` | Class imbalance, RF tuning, permutation importance |
 | `export_results.py`, `generate_report.py` | CSV export and `PROJECT_REPORT.md` |
 | `src/` | Library code (models, ensemble, risk engine, Q-learning, feedback) |
-| `dashboard/app.py` | Streamlit dashboard (8 pages) |
+| `dashboard/app.py` | Streamlit dashboard (7 pages) |
 | `results/` | Measured outputs (metrics, comparison CSV, Step 7 artefacts) |
 | `submission/` | Presentation, report template, viva Q&A, test cases, diagrams |
 | `docs/history/` | Notes from the individual build steps |

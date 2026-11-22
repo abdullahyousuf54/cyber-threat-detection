@@ -101,7 +101,6 @@ pages = [
     "Anomaly Detection",
     "Human Feedback",
     "Explainability & Tuning",
-    "Project Notes",
 ]
 page = st.sidebar.radio("Navigation", pages)
 
@@ -581,38 +580,3 @@ elif page == "Explainability & Tuning":
             "shuffled (tuned model, 3,000-record test sample)."
         )
 
-elif page == "Project Notes":
-    st.header("Project / Viva Notes")
-
-    st.subheader("What the system contains")
-    st.markdown(
-        """
-        - PyTorch DNN as a third supervised model
-        - Weighted ensemble of RF + SVM + DNN when the DNN is available
-        - Confusion matrices
-        - One-vs-rest ROC curves and macro AUC
-        - Risk scoring and adaptive Q-learning response
-        - Human-in-the-loop feedback
-        - Evaluation and report generation
-        """
-    )
-
-    st.subheader("Important interpretation")
-    st.warning(
-        "The Q-learning response layer is an academic simulation. "
-        "MONITOR/ALERT/BLOCK/ISOLATE are recommendations only; this "
-        "prototype does not execute firewall rules, device isolation, "
-        "packet manipulation, or other real containment actions."
-    )
-
-    st.subheader("Limitations")
-    st.markdown(
-        """
-        1. NSL-KDD is a benchmark dataset rather than a complete representation
-           of modern enterprise traffic.
-        2. The Linear SVM confidence is derived from its decision score.
-        3. The risk formula is a project-defined weighted score.
-        4. Q-learning is trained in a simulated defensive environment.
-        5. The DNN is optional because PyTorch is a heavier dependency.
-        """
-    )
