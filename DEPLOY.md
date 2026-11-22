@@ -11,16 +11,19 @@ do not run `run_all.py` during deployment. It retrains the models and takes much
 3. Create a free Neon PostgreSQL project. In Neon's **Connect** dialog, copy its
    pooled connection string and replace the password placeholder with your database
    password. Use the string with `sslmode=require`.
-4. In Streamlit's **Advanced settings > Secrets**, add:
+4. If the app is already deployed, open its card at `share.streamlit.io`,
+   choose **⋮ > Settings > Secrets**, and add:
 
    ```toml
    DATABASE_URL = "postgresql://..."
    ADMIN_PASSWORD = "choose-a-long-unique-password"
    ```
 
+   During initial deployment, the same Secrets field is under **Advanced settings**.
    Keep these values out of GitHub and chat. Streamlit exposes top-level secrets as
    environment variables to the app.
-5. Deploy. The app creates two small database tables automatically on first start.
+5. Save the settings and open or refresh the app. The app creates two small database
+   tables automatically on first start with `DATABASE_URL` configured.
    It seeds the Q-learning policy from `models/nslkdd/q_table.json` only if the
    database has no policy yet.
 
