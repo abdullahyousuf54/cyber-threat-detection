@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+data/feedback.csv
+assets/bundle.zip
+data/nsl_kdd/KDDTrain+.txt
+data/nsl_kdd/KDDTest+.txt
+models/nslkdd/random_forest.joblib
+models/nslkdd/isolation_forest.joblib
+models/nslkdd/evaluation.json
+results/evaluation.json

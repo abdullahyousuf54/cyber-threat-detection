@@ -1,0 +1,5 @@
+model,accuracy,precision_weighted,recall_weighted,f1_weighted,f1_macro,macro_auc
+random_forest,0.7323,0.7837,0.7323,0.6845,0.4725,0.9204
+linear_svm,0.7528,0.7722,0.7528,0.7256,0.5338,0.8828
+pytorch_dnn,0.7479,0.8016,0.7479,0.7145,0.5931,0.9098
+ensemble,0.7625,0.8248,0.7625,0.7244,0.574,0.9275
